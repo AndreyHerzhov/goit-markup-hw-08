@@ -1,0 +1,25 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
+  padding: 24px 0 25px 0;
+}
+
+.header__web {
+  color: #2196f3;
+}
