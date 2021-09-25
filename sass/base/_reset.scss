@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.link {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
