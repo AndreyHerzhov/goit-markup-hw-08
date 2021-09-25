@@ -1,0 +1,9 @@
+<div class="backdrop is-hidden" data-modal>
+            
+                <div class="modal">
+                    <p> </p>
+                </div>
+                <button data-modal-close>Close</button>
+            
+</div>
+
