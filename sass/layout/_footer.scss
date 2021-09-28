@@ -4,11 +4,6 @@
   padding-bottom: 60px;
 }
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
-
 .footer__logo {
   font-family: Raleway;
   font-style: normal;
@@ -29,4 +24,9 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.footer__container {
+  text-align: center;
+  margin-bottom: 60px;
 }
