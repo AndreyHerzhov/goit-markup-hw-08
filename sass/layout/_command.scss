@@ -1,11 +1,13 @@
 .command {
   background-color: #f5f4fa;
   margin: 0 auto;
+  width: 480px;
 }
 
 .command__container {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 480px;
 }
 
 .command__title {
@@ -62,7 +64,3 @@
   color: #757575;
   text-align: center;
 }
-
-// .img {
-//   width: 100%;
-// }
