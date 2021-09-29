@@ -1,6 +1,6 @@
 .portfolio {
   padding-top: 60px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 .button-list {
@@ -11,10 +11,13 @@
   width: 100%;
   margin-bottom: 40px;
 }
+.button-list__item:not(:nth-child(3n + 1)) {
+  margin-left: 8px;
+}
 
-// .button-list__item:not(:first-child) {
-//   margin-left: 8px;
-// }
+.button-list__button--margin {
+  margin-bottom: 15px;
+}
 
 .button-list__button {
   font-weight: 500;
