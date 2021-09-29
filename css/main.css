@@ -831,6 +831,8 @@ ul {
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
+  width: 480px;
 }
 
 .button-list {
