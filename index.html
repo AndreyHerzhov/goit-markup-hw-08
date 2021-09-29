@@ -24,7 +24,7 @@
     
         
             
-                <!-- <header class="header">
+                <header class="header">
                     
                        
                        <div class="header__container container">
@@ -32,23 +32,94 @@
                                 <span class="header__web">Web</span>Studio
                             </a>
                             
-                            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                            <button class="menu-toggle js-open-menu" data-menu-open>
                                 <svg width="24" height="16" aria-label="Переключатель мобильного меню">
-                                    <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
                                     <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
                                 </svg>
                             </button>
                             </button>
                        </div>
                     
-                      
+                      <div class="mob-menu is-hidden" data-menu>
+                        <button class="menu-close" data-menu-close aria-expanded="false" aria-controls="menu-close">
+                            <svg width="19" height="19" aria-label="Закрытие мобильног меню">
+                                <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                            </svg>
+                        </button>
+
+                        <ul class="mob-menu__list list">
+                        
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link  link current-mob">
+                                    Студия
+                                </a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link link" href="portfolio.html" rel="noopener noreferrer">
+                                    Портфолио
+                                </a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link link">
+                                    Контакты
+                                </a>
+                            </li>
+
+                            
+                        </ul>
+
+                        <div class="contact-wraper">
+                            <ul class="contacts-list">
+                            <li class="contact-list__item list">
+                                <a class="contacts-list__link contacts-list__link--tel  link" href="tel:+380961111111">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="contact-list__item list">
+                                <a class="contacts-list__link contacts-list__link--mail link" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="social-header">
+                        
+                            <li class="social-header__item  list">
+                                <a href="https://www.instagram.com/"
+                                    class="social-header__link social-header__link--after social-header__link--instagram link" target="_blank">
+                                    Instagram
+                                </a>
+                        
+                            </li>
+                        
+                            <li class="social-header__item  list">
+                                <a href="https://twitter.com/" class="social-header__link social-header__link--after link" target="_blank">
+                                    Twitter
+                                </a>
+                        
+                            </li>
+                        
+                            <li class="social-header__item  list">
+                                <a href="https://www.facebook.com/" class="social-header__link social-header__link--after link" target="_blank">
+                                    Facebook
+                                </a>
+                        
+                            </li>
+                        
+                            <li class="social-header__item list">
+                                <a href="https://www.linkedin.com/" class="social-header__link link" target="_blank">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                      </div>
 
 
                         
  
 
 
-                </header> -->
+                </header>
             
      
         
@@ -105,7 +176,7 @@
        
             
 
-         <!-- <section class="command">  
+         <section class="command">  
 
             <div class="command__container container">
 
@@ -120,7 +191,7 @@
                                         alt="Игорь Демьяненко" />
                             
                                 <source srcset="images/Main-tab/igor-tab-1x.jpg 1x, images/Main-tab/igor-tab-2x.jpg 2x" 
-                                        media="(min-width:760px)"
+                                        media="(min-width:768px)"
                                         alt="Игорь Демьяненко" />
                             
                                 <source srcset="images/Main-mob/igor-mob.jpg 1x, images/Main-mob/igor-mob2x.jpg  2x" 
@@ -183,7 +254,7 @@
                                 />
                                 
                                 <source  srcset="images/Main-tab/olga-tab-1x.jpg 1x, images/Main-tab/olga-tab-1x.jpg 1x"
-                                         media="(min-width:760px)"
+                                         media="(min-width:768px)"
                                          alt="Ольга Репина"
                                 />
 
@@ -243,7 +314,7 @@
                             <picture>
                                 <source srcset="" media="(min-width:1200px)" alt="Николай Тарасов" />
                             
-                                <source srcset="images/Main-tab/kolya-tab-1x.jpg 1x, images/Main-tab/kolya-tab-2x.jpg 2x" media="(min-width:760px)"
+                                <source srcset="images/Main-tab/kolya-tab-1x.jpg 1x, images/Main-tab/kolya-tab-2x.jpg 2x" media="(min-width:768px)"
                                     alt="Николай Тарасов" />
                             
                                 <source srcset="images/Main-mob/kolya-mob.jpg 1x, images/Main-mob/kolya-mob2x.jpg  2x" media="(min-width:480px)"
@@ -298,7 +369,7 @@
                         <picture>
                             <source srcset="" media="(min-width:1200px)" alt="Михаил Ермаков" />
                         
-                            <source srcset="images/Main-tab/misha-tab-1x.jpg 1x, images/Main-tab/misha-tab-2x.jpg 2x" media="(min-width:760px)"
+                            <source srcset="images/Main-tab/misha-tab-1x.jpg 1x, images/Main-tab/misha-tab-2x.jpg 2x" media="(min-width:768px)"
                                 alt="Михаил Ермаков" />
                         
                             <source srcset="images/Main-mob/misha-mob.jpg 1x, images/Main-mob/misha-mob2x.jpg   2x" media="(min-width:480px)"
@@ -349,7 +420,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- <section class="client">
 
@@ -574,6 +645,7 @@
     <!-- </div> -->
     
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     
 </body>
 

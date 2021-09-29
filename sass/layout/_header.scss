@@ -1,10 +1,12 @@
 .header__container {
+  position: relative;
   border-bottom: 1px solid #ececec;
   position: relative;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 480px;
 }
 
 @media screen and (min-width: 780px) {
@@ -36,6 +38,12 @@
 }
 
 .menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
   margin-left: auto;
   border: none;
   background-color: transparent;
@@ -46,4 +54,109 @@
 .menu-toggle:hover {
   fill: rgb(255, 255, 255);
   cursor: pointer;
+}
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  visibility: visible;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  transform: translateX(0%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu__item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  color: #212121;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-close {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    fill: #2196f3;
+    cursor: pointer;
+  }
+}
+
+.social-header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.social-header__link {
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  color: #2196f3;
+  margin-left: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+
+  @media screen and (min-width: 480px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    margin-left: 20px;
+  }
+}
+
+.mob-menu__link:hover {
+  color: #2196f3;
+}
+
+.mob-menu__link {
+  color: #000000;
+}
+
+.social-header__link--instagram {
+  margin: 0px;
+}
+
+.social-header__link--after::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  top: 0;
+  right: -10px;
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
