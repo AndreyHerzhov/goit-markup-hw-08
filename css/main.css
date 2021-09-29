@@ -34,8 +34,6 @@ li {
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
-  width: 480px;
-  margin: 0 auto;
 }
 
 img {
@@ -84,6 +82,10 @@ ul {
   }
 }
 
+.header {
+  width: 100%;
+}
+
 .header__container {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -92,7 +94,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 480px;
 }
 
 @media screen and (min-width: 780px) {
@@ -381,7 +382,6 @@ ul {
 .hero__container {
   padding-left: 0px;
   padding-right: 0px;
-  width: 480px;
 }
 
 .hero__titel {
@@ -436,7 +436,6 @@ ul {
 .main__container {
   margin-top: 60px;
   margin-bottom: 60px;
-  width: 480px;
 }
 
 .main-list__title {
@@ -458,10 +457,6 @@ ul {
   color: var(--main-text-color);
   text-align: left;
   letter-spacing: 0.03em;
-}
-
-.main-list__item {
-  width: 100%;
 }
 
 .main-list__item::before {
@@ -536,11 +531,9 @@ ul {
 .command {
   background-color: #f5f4fa;
   margin: 0 auto;
-  width: 480px;
 }
 
 .command__container {
-  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -566,6 +559,14 @@ ul {
 
 .command__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .command__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 .command__card {
