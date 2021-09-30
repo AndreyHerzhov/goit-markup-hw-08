@@ -1,10 +1,10 @@
-.footer {
+.footer__container {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__logo {
+.footer-wraper__logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -14,11 +14,11 @@
   color: black;
 }
 
-.footer__web {
+.footer-wraper__web {
   color: #188ce8;
 }
 
-.footer__studio {
+.footer-wraper__studio {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -26,7 +26,7 @@
   color: #ffffff;
 }
 
-.footer__container {
+.footer-wraper {
   text-align: center;
   margin-bottom: 60px;
 }
