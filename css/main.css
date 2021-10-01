@@ -98,7 +98,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header__container {
     height: 80px;
   }
@@ -131,7 +131,7 @@ ul {
   padding: 0;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -257,6 +257,13 @@ ul {
 
 .contacts-list-tab {
   margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-list-tab {
+    display: block;
+  }
 }
 
 .contacts-list-tab__link {
@@ -358,7 +365,7 @@ ul {
   display: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .site-nav {
     display: block;
   }
@@ -476,6 +483,20 @@ ul {
 .main__container {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 767px) {
+  .main-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    width: 354px;
+  }
 }
 
 .main-list__title {

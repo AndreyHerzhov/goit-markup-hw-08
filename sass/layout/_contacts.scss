@@ -1,5 +1,10 @@
 .contacts-list-tab {
   margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .contacts-list-tab__link {

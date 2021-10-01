@@ -3,6 +3,20 @@
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 767px) {
+  .main-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+    width: 354px;
+  }
+}
+
 .main-list__title {
   font-size: 14px;
   line-height: 1.14;
