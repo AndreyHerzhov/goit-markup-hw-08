@@ -7,20 +7,17 @@
 //   margin-left: 30px;
 // }
 
-.portfolio {
-  width: 480px;
-}
-.cards-list {
-  width: 450px;
-}
+// .portfolio {
+//   width: 480px;
+// }
 
-.cards-list__img {
-  width: 450px;
-}
-
-.cards-list__item:not(:nth-child(1n + 7)) {
+.cards-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
+
+// .cards-list__item:not(:nth-child(1n + 7)) {
+//   margin-bottom: 30px;
+// }
 
 .cards-list__link {
   text-decoration: none;

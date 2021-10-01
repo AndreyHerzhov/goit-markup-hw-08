@@ -1002,7 +1002,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
-  width: 480px;
+  width: 100%;
 }
 
 .button-list {
@@ -1010,12 +1010,26 @@ ul {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  width: 100%;
   margin-bottom: 40px;
+  max-width: 365px;
 }
 
-.button-list__item:not(:nth-child(3n + 1)) {
-  margin-left: 8px;
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  .button-list {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  .button-list__item:not(:nth-child(2n + 1)) {
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 381px) {
+  .button-list__item:not(:nth-child(3n + 1)) {
+    margin-left: 8px;
+  }
 }
 
 .button-list__button--margin {
@@ -1041,19 +1055,7 @@ ul {
   color: #ffffff;
 }
 
-.portfolio {
-  width: 480px;
-}
-
-.cards-list {
-  width: 450px;
-}
-
-.cards-list__img {
-  width: 450px;
-}
-
-.cards-list__item:not(:nth-child(1n + 7)) {
+.cards-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
