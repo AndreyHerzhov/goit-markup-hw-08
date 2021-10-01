@@ -1,7 +1,10 @@
-// .cards-list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+@media screen and (min-width: 768px) {
+  .cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 // .cards-list__item:not(:nth-child(3n + 1)) {
 //   margin-left: 30px;
@@ -68,6 +71,12 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .cards-list__content--height {
+    height: 146px;
+  }
 }
 
 .cards-list__titel {
