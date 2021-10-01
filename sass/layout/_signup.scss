@@ -5,6 +5,13 @@
 //   align-items: flex-end;
 // }
 
+@media screen and (min-width: 768px) {
+  .signup {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
 .signup__label {
   display: block;
   font-family: Roboto;
