@@ -5,6 +5,9 @@
   @media screen and (min-width: 768px) {
     display: block;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contacts-list-tab__link {
@@ -35,6 +38,16 @@
 
 .contact-list-tab__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list-tab__item:last-child {
+    margin-left: 30px;
+  }
 }
 
 .contacts-list {

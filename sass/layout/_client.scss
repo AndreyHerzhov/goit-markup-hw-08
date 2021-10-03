@@ -1,6 +1,11 @@
 .client__container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client__titel {
@@ -11,6 +16,11 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .client__icon {
@@ -42,19 +52,20 @@
     flex-basis: calc(100% / 2 - 30px);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
     width: 226px;
     height: 92px;
   }
 
   @media screen and (min-width: 1200px) {
+    flex-basis: auto;
     width: 170px;
     height: 92px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .client__item:not(:nth-child(1n + 5)) {
     margin-bottom: 30px;
   }
@@ -63,6 +74,18 @@
 @media screen and (min-width: 768px) {
   .client__item:not(:nth-child(1n + 4)) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item:not(:nth-child(1n + 4)) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__item {
+    margin-bottom: 0px;
   }
 }
 

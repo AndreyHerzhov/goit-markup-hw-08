@@ -11,6 +11,16 @@
   height: 400px;
   background-color: #2f303a;
   padding: 118px 0px 118px 0px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Main-mob/Main-mob-img-2x.jpg);
+  }
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
@@ -19,6 +29,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/Main-tab/Main-tab-img-1x.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Main-tab/Main-tab-img-2x.jpg);
   }
 
   @media screen and (min-width: 1200px) {
@@ -31,6 +51,16 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/Main-desktop/Main-desktop-img-1x.jpg);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Main-desktop/Main-desktop-img-2x.jpg);
   }
 }
 

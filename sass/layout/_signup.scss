@@ -1,14 +1,25 @@
-// .signup__form {
-//   display: flex;
-//   justify-content: flex-end;
-//   right: 0px;
-//   align-items: flex-end;
-// }
+@media screen and (min-width: 1200px) {
+  .signup__form {
+    display: flex;
+    justify-content: flex-end;
+    right: 0px;
+    align-items: flex-end;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .signup {
     width: 450px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .signup {
+    width: 100%;
+    // margin-left: 93px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -23,6 +34,10 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .signup__input {
@@ -45,6 +60,10 @@
   &:focus {
     outline: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .signup__button {
@@ -66,6 +85,10 @@
   border: none;
   margin: 0 auto;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .submit__icon {
