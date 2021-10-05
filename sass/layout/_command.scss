@@ -1,4 +1,4 @@
-.command__container {
+.command {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #f5f4fa;
@@ -45,10 +45,8 @@
   }
 }
 
-@media screen and (min-width: 480px) {
-  .command__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.command__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {

@@ -32,14 +32,22 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
-  width: 450px;
+  padding: 40px 20px 20px 20px;
+  width: 290px;
   height: 609px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
+
+  @media screen and (min-width: 420px) {
+    width: 390px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding: 40px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -75,7 +83,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  width: 370px;
+
   height: 60px;
 
   @media screen and (min-width: 1200px) {
@@ -164,16 +172,26 @@
 }
 
 .modal__field--checkbox {
-  padding-left: 12px;
+  padding-left: 5px;
   margin-top: 20px;
+  @media screen and (min-width: 420px) {
+    padding-left: 8px;
+  }
 }
 
 .check-label > a {
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
+  @media screen and (min-width: 420px) {
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .check-label {
@@ -193,11 +211,18 @@
 }
 
 .check-label__text {
-  font-size: 12px;
+  font-size: 7px;
   line-height: 1.7;
   // letter-spacing: 0.03em;
   color: #757575;
   margin-right: 3px;
+
+  @media screen and (min-width: 420px) {
+    font-size: 11px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
 }
 
 .modal__checkbox:checked + .check-label > .check-label__icon {

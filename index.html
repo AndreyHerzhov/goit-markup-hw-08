@@ -565,7 +565,10 @@
 
         <div class="footer__container container">
 
-                <div class="tab-wraper">
+            <div class="tab-wraper">
+
+                <div class="wraper-tab">
+                    
                     <div class="footer-wraper">
                     
                         <a class="footer-wraper__logo link" href="">
@@ -624,24 +627,29 @@
                         </ul>
                     </div>
                 </div>
+                
+                
+                <div class="signup">
 
-            <div class="signup">
+                    <form class="signup__form">
+                        
+                            <label class="signup__label">
+                            Подпишитесь на рассылку
+                            <input type="email" name="email" placeholder="E-mail" class="signup__input" />
+                            </label>
+                        
+                        <button type="submit" class="signup__button">Подписаться
+                            <svg class="submit__icon">
+                                <use href="./images/sprite.svg#icon-icon-send" width="24 " height="24"></use>
+                            </svg>
+                        </button>
+                    </form>
 
-                <form class="signup__form">
-                    
-                        <label class="signup__label">
-                        Подпишитесь на рассылку
-                        <input type="email" name="email" placeholder="E-mail" class="signup__input" />
-                        </label>
-                    
-                    <button type="submit" class="signup__button">Подписаться
-                        <svg class="submit__icon">
-                            <use href="./images/sprite.svg#icon-icon-send" width="24 " height="24"></use>
-                        </svg>
-                    </button>
-                </form>
+                </div>
 
             </div>
+
+            
         </div>
        
     </footer>   
