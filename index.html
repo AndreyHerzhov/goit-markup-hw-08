@@ -48,7 +48,7 @@
                                     <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
                                 </svg>
                             </button>
-                            </button>
+                            
 
                             <ul class="contacts-list-tab">
                                 <li class="contact-list-tab__item list">
@@ -218,21 +218,32 @@
         
                     <li class="directions__item list">
                         <div class="directions__thumb">
-                            <img src="images/box1.jpg" alt="Печатает" width="370" />
+                            <picture>
+                                <source srcset="images/Main-desktop/img1-1x.jpg 1x, images/Main-desktop/img1-2x.jpg 2x"
+                                    media="(min-width:1200px)" />                                                                                      
+                                <img  src="images/Main-desktop/img1-1x.jpg" alt="">
+                            </picture>
                             <p class="directions__text">Десктопные приложения</p>
                         </div>
                     </li>
         
                     <li class="directions__item list">
                         <div class="directions__thumb">
-                            <img src="images/box2.jpg" alt="Телефон в руке" width="370" />
+                            <picture>
+                                <source srcset="images/Main-desktop/img2-1x.jpg 1x, images/Main-desktop/img2-2x.jpg 2x" media="(min-width:1200px)"
+                                    />
+                                <img src="images/Main-desktop/img2-1x.jpg" alt="">
+                            </picture>
                             <p class="directions__text">Мобильные приложения</p>
                         </div>
                     </li>
         
                     <li class="directions__item list">
                         <div class="directions__thumb">
-                            <img src="images/box3.jpg" alt="Планшет в руке" width="370" />
+                            <picture>
+                                <source srcset="images/Main-desktop/img3-1x.jpg 1x, images/Main-desktop/img3-2x.jpg 2x" media="(min-width:1200px)"                              />
+                                <img src="images/Main-desktop/img3-1x.jpg" alt="" >
+                            </picture>
                             <p class="directions__text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -256,17 +267,17 @@
                             <picture class="img">
                                 <source srcset="images/Main-desktop/igor-desktop1x.jpg 1x, images/Main-desktop/igor-desktop2x.jpg 2x" 
                                         media="(min-width:1200px)" 
-                                        alt="Игорь Демьяненко" />
+                                         />
                             
                                 <source srcset="images/Main-tab/igor-tab-1x.jpg 1x, images/Main-tab/igor-tab-2x.jpg 2x" 
                                         media="(min-width:768px)"
-                                        alt="Игорь Демьяненко" />
+                                         />
                             
                                 <source srcset="images/Main-mob/igor-mob.jpg 1x, images/Main-mob/igor-mob2x.jpg  2x" 
                                         media="(min-width:480px)"
-                                        alt="Игорь Демьяненко" />
+                                        />
                             
-                                 <img class="img" src="images/Main-mob/igor-mob.jpg" alt="">
+                                 <img class="img" src="images/Main-mob/igor-mob.jpg" alt="Игорь Демьяненко">
                             </picture>
                         
                         <div class="command__card">
@@ -318,21 +329,21 @@
                             <picture class="img">
                                 <source srcset="images/Main-desktop/olga-desktop1x.jpg 1x, images/Main-desktop/olga-desktop2x.jpg 2x" 
                                         media="(min-width:1200px)" 
-                                        alt="Ольга Репина"
+                                        
                                 />
                                 
-                                <source  srcset="images/Main-tab/olga-tab-1x.jpg 1x, images/Main-tab/olga-tab-2x.jpg 1x"
+                                <source  srcset="images/Main-tab/olga-tab-1x.jpg 1x, images/Main-tab/olga-tab-2x.jpg 2x"
                                          media="(min-width:768px)"
-                                         alt="Ольга Репина"
+                                         
                                 />
 
                                 <source srcset="images/Main-mob/olga-mob.jpg 1x, images/Main-mob/olga-mob2x.jpg 2x"
                                         media="(min-width:480px)"
-                                        alt="Ольга Репина"
+                                        
                                 
                                 />
                                 
-                                <img class="img" src="images/Main-mob/olga-mob.jpg" alt="">
+                                <img class="img" src="images/Main-mob/olga-mob.jpg" alt="Ольга Репина">
                             </picture>
                         
                         <div class="command__card">
@@ -376,20 +387,21 @@
                         </div>
 
                     </li>
+
                     <li class="command__item list">
                        
 
                             <picture class="img">
                                 <source srcset="images/Main-desktop/kolya-desktop1x.jpg 1x, images/Main-desktop/kolya-desktop2x.jpg 2x" 
-                                    media="(min-width:1200px)" alt="Николай Тарасов" />
+                                    media="(min-width:1200px)"  />
                             
                                 <source srcset="images/Main-tab/kolya-tab-1x.jpg 1x, images/Main-tab/kolya-tab-2x.jpg 2x" media="(min-width:768px)"
-                                    alt="Николай Тарасов" />
+                                     />
                             
                                 <source srcset="images/Main-mob/kolya-mob.jpg 1x, images/Main-mob/kolya-mob2x.jpg  2x" media="(min-width:480px)"
-                                    alt="Николай Тарасов" />
+                                     />
                             
-                                <img class="img" src="images/Main-mob/kolya-mob.jpg" alt="">
+                                <img class="img" src="images/Main-mob/kolya-mob.jpg" alt="Николай Тарасов">
                             </picture>
                         
                         <div class="command__card">
@@ -432,19 +444,20 @@
                                 </ul>
                         </div>
                     </li>
+
                     <li class="command__item list">
                         
 
                         <picture class="img">
-                            <source srcset="images/Main-desktop/misha-desktop1x.jpg 1x, images/Main-desktop/misha-desktop2x.jpg 2x" media="(min-width:1200px)" alt="Михаил Ермаков" />
+                            <source srcset="images/Main-desktop/misha-desktop1x.jpg 1x, images/Main-desktop/misha-desktop2x.jpg 2x" media="(min-width:1200px)"  />
                         
                             <source srcset="images/Main-tab/misha-tab-1x.jpg 1x, images/Main-tab/misha-tab-2x.jpg 2x" media="(min-width:768px)"
-                                alt="Михаил Ермаков" />
+                                 />
                         
                             <source srcset="images/Main-mob/misha-mob.jpg 1x, images/Main-mob/misha-mob2x.jpg   2x" media="(min-width:480px)"
-                                alt="Михаил Ермаков" />
+                                 />
                         
-                            <img class="img" src="images/Main-mob/misha-mob.jpg" alt="">
+                            <img class="img" src="images/Main-mob/misha-mob.jpg" alt="Михаил Ермаков">
                         </picture>
                         
                         <div class="command__card">
@@ -487,6 +500,7 @@
                                     </ul>
                         </div>
                     </li>
+                    
                 </ul>
             </div>
 

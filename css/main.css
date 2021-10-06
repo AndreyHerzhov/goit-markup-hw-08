@@ -83,9 +83,12 @@ ul {
   }
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   position: relative;
-  border-bottom: 1px solid #ececec;
   position: relative;
   height: 60px;
   align-items: center;
@@ -162,7 +165,7 @@ ul {
   width: 100vw;
   height: 100vh;
   padding-top: 40px;
-  padding-left: 40px;
+  padding-left: 25px;
   padding-bottom: 40px;
   transform: translateX(0%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -441,7 +444,7 @@ ul {
   height: 400px;
   background-color: #2f303a;
   padding: 118px 0px 118px 0px;
-  max-width: 480px;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -454,7 +457,7 @@ ul {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Main-tab/Main-tab-img-1x.jpg);
-    max-width: 768px;
+    width: 100vw;
     margin: 0 auto;
   }
 }
@@ -838,22 +841,9 @@ ul {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .img {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .img {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 .command__card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1449,17 +1439,31 @@ ul {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 63px 24px;
+  padding: 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(101%);
 }
 
 .cards-list__item:hover .cards-list__overlay {
   transform: translateY(0px);
+}
+
+@media screen and (min-width: 370px) {
+  .cards-list__overlay {
+    font-size: 16px;
+    padding: 34px 24px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .cards-list__overlay {
+    font-size: 18px;
+    padding: 34px 24px;
+  }
 }
 
 .cards-list__content {
@@ -1470,12 +1474,6 @@ ul {
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-}
-
-@media screen and (min-width: 768px) {
-  .cards-list__content--height {
-    height: 146px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1491,7 +1489,7 @@ ul {
 }
 
 .cards-list__titel {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
