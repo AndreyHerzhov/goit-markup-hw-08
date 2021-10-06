@@ -98,6 +98,10 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) {
+    height: 146px;
+  }
 }
 
 // @media screen and (min-width: 768px) {
@@ -106,11 +110,11 @@
 //   }
 // }
 
-@media screen and (min-width: 1200px) {
-  .cards-list__content--height {
-    height: 110px;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .cards-list__content--height {
+//     height: 110px;
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .cards-list__content {
@@ -125,6 +129,14 @@
   color: var(--secondary-title-color);
   text-decoration: none;
   margin-bottom: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 295px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 305px;
+  }
 }
 
 .cards-list__text {
